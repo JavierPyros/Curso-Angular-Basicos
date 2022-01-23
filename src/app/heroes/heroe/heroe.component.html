@@ -1,0 +1,25 @@
+<h1> {{nombre}}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{nombre}}</dd>
+
+    <td>Edad:</td>
+    <dd>{{edad}}</dd>
+
+    <!-- Al ser una función si necesita invocacióm con ()-->
+    <td>Funcion:</td>
+    <dd>{{obtenerNombre()}}</dd>
+
+    <!-- Cuando es un getter no es necesario invocar a la función-->
+    <td>Capitalizado:</td>
+    <dd>{{nombreCapitalizado}}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">
+    Cambiar Héroe
+</button>
+
+<button (click)="cambiarEdad()">
+    Cambiar Edad
+</button>
